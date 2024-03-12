@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 # Carregar a imagem
-img = cv.imread("atv/atv01/img/color_red.jpg")
+img = cv.imread("atv/atv02/img/color_red.jpg")
 
 hsvImg = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 

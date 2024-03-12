@@ -7,7 +7,7 @@ ix, iy = -1, -1
 color = (255, 255, 0)
 img = None
 
-cap = cv2.VideoCapture('atv/atv02/video/video_atv02.mp4')
+cap = cv2.VideoCapture('atv/atv03/video/video_atv03.mp4')
 
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
