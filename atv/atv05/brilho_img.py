@@ -5,7 +5,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread("atv/atv05/img/color_red.jpg")
+img = cv.imread("atv/img/color_red.jpg")
 
 # os valores de contraste e brilho
 alpha = 1.0 

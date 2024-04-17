@@ -8,7 +8,7 @@ def click_event(event, x, y, flags, param):
     if event == cv.EVENT_LBUTTONDOWN:
         rotation_point = (x, y)
 
-img = cv.imread('atv/atv06/img/color_red.jpg')
+img = cv.imread('atv/img/color_red.jpg')
 
 cv.imshow('Image', img)
 cv.setMouseCallback('Image', click_event)

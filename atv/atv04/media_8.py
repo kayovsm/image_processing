@@ -5,7 +5,7 @@ import cv2 as cv
 import numpy as np
 
 # Carregar a imagem
-img = cv.imread("atv/atv04/img/color_red.jpg")
+img = cv.imread("atv/img/color_red.jpg")
 
 # dimensões da imagem
 height, width = img.shape[:2]

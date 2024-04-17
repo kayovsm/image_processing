@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('atv/atv06/img/color_red.jpg')
+img = cv2.imread('atv/img/color_red.jpg')
 
 rows,cols = img.shape[:2]
 
