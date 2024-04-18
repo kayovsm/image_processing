@@ -39,8 +39,9 @@ lowPassMask[centerRow-60:centerRow+60, centerCol-60:centerCol+60] = 1
 
 lowPassMask = np.ones_like(inputImage) * 255
 
-coordinates = findCoordinates(magnitudeSpectrum, 4, 10, None)
+coordinates = findCoordinates(magnitudeSpectrum, 4, 5, None)
 print('Points: ', coordinates)
+# points = [(562, 553), (561, 555), (561, 553), (561, 554)]
 
 # desenhando o circulo de acordo com as coordenadas
 for point in coordinates:
@@ -48,7 +49,7 @@ for point in coordinates:
 
 blurredMask = cv2.GaussianBlur(lowPassMask, (29, 29), 0)
 
-# aplicando a máscara a transformada de fourier
+# aplicando a máscara na transformada de fourier
 maskedFourier = np.multiply(shiftedFourier, blurredMask) / 255
 inverseShiftedFourier = np.fft.ifftshift(maskedFourier)
 inverseFourierImage = np.fft.ifft2(inverseShiftedFourier)
